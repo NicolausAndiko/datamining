@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 3 - Implementasi K-NN Pada Dataset Iris &#8212; Data Mining</title>
+    <title>Implementasi K-NN Pada Dataset Iris &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Naive Bayes Classification" href="tugas-4.html" />
-    <link rel="prev" title="Tugas 2 - Diskritisasi" href="tugas-2.html" />
+    <link rel="prev" title="Diskritisasi" href="tugas-2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Selamat datang di Jupyter Book milik Nicolaus Andiko
                 </a>
             </li>
         </ul>
@@ -143,17 +143,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="tugas-1.html">
-   Tugas 1 - Dissimilarity
+   Dissimilarity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tugas-2.html">
-   Tugas 2 - Diskritisasi
+   Diskritisasi
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 3 - Implementasi K-NN Pada Dataset Iris
+   Implementasi K-NN Pada Dataset Iris
   </a>
  </li>
  <li class="toctree-l1">
@@ -434,7 +434,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 3 - Implementasi K-NN Pada Dataset Iris</h1>
+                <h1>Implementasi K-NN Pada Dataset Iris</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -489,8 +489,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3-implementasi-k-nn-pada-dataset-iris">
-<h1>Tugas 3 - Implementasi K-NN Pada Dataset Iris<a class="headerlink" href="#tugas-3-implementasi-k-nn-pada-dataset-iris" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="implementasi-k-nn-pada-dataset-iris">
+<h1>Implementasi K-NN Pada Dataset Iris<a class="headerlink" href="#implementasi-k-nn-pada-dataset-iris" title="Permalink to this headline">#</a></h1>
 <section id="reading-in-the-training-data">
 <h2>Reading in the training data<a class="headerlink" href="#reading-in-the-training-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
@@ -506,7 +506,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2e9df4f1-281f-4950-82d6-b9aafe2205a2">
+  <div id="df-f7bc8074-30b6-427b-9afc-0fb51b354fad">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -577,7 +577,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2e9df4f1-281f-4950-82d6-b9aafe2205a2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f7bc8074-30b6-427b-9afc-0fb51b354fad')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -628,12 +628,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2e9df4f1-281f-4950-82d6-b9aafe2205a2 button.colab-df-convert');
+          document.querySelector('#df-f7bc8074-30b6-427b-9afc-0fb51b354fad button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2e9df4f1-281f-4950-82d6-b9aafe2205a2');
+          const element = document.querySelector('#df-f7bc8074-30b6-427b-9afc-0fb51b354fad');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -680,7 +680,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5ca92d4a-e199-476e-a8ed-52b37b6f05c3">
+  <div id="df-a7ca9bec-fd26-4d0c-a806-41d54987e073">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -745,7 +745,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5ca92d4a-e199-476e-a8ed-52b37b6f05c3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a7ca9bec-fd26-4d0c-a806-41d54987e073')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -796,12 +796,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5ca92d4a-e199-476e-a8ed-52b37b6f05c3 button.colab-df-convert');
+          document.querySelector('#df-a7ca9bec-fd26-4d0c-a806-41d54987e073 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5ca92d4a-e199-476e-a8ed-52b37b6f05c3');
+          const element = document.querySelector('#df-a7ca9bec-fd26-4d0c-a806-41d54987e073');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1007,7 +1007,7 @@ cv_scores mean:0.9666666666666668
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tugas 2 - Diskritisasi</p>
+            <p class="prev-next-title">Diskritisasi</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="tugas-4.html" title="next page">
