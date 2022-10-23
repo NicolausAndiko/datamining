@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Data Mining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Metode Data Mining &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -30,7 +31,6 @@
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -50,19 +50,16 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dissimilarity" href="tugas-1.html" />
+    <link rel="prev" title="Fungsi Data Mining" href="datamining_2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -103,7 +100,7 @@ const thebe_selector_output = ".output, .cell_output"
       <h1 class="site-logo" id="site-title">Data Mining</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -121,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
   Introduction
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="datamining_1.html">
    Definisi Data Mining
@@ -132,8 +129,8 @@ const thebe_selector_output = ".output, .cell_output"
    Fungsi Data Mining
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="datamining_3.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Metode Data Mining
   </a>
  </li>
@@ -259,7 +256,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NicolausAndiko/datamining.git/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/NicolausAndiko/datamining.git/issues/new?title=Issue%20on%20page%20%2Fdatamining_3.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -279,6 +276,52 @@ title="Open an issue"
   </div>
 </div>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/datamining_3.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
@@ -290,7 +333,7 @@ title="Open an issue"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Metode Data Mining</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -302,36 +345,42 @@ title="Open an issue"
                 
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  
-  <noscript>
-  <div class="admonition warning">
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  </noscript>
-  
-  
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  
-  
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  
-  
-  <div id="search-results">
-  
-  </div>
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="metode-data-mining">
+<h1>Metode Data Mining<a class="headerlink" href="#metode-data-mining" title="Permalink to this headline">#</a></h1>
+<p>Penerapan metode data mining yang tepat dapat membuat perencanaan bisnis atau business plan berjalan baik, proses dari eksekusi perencanaan ini juga akan baik pula. Karena itu memahami metode dalam penerapan data ini sangat diperlukan, lantas penjelasan apa saja terkait dari metode penambangan ini? berikut diantaranya.</p>
+<ol class="simple">
+<li><p>Mengumpulkan Data
+Tahapan dari pengumpulan data ini berawal dari merapikan data mentah dan hasilnya berupa pengetahuan atau informasi yang sudah diolah. Di antaranya adalah data cleansing (buang data yang tak diperlukan), data integration (proses integrasi), selection (memilih data yang relevan sebelum proses) dan data transformation atau transformasi data yang dipilih.</p></li>
+<li><p>Menyiapkan Data
+Masuk ke tahap berikutnya yaitu data mining, fungsinya untuk mengekstrak berbagai pola yang berpotensi dalam mendapatkan data yang berguna. Selain itu dilakukan juga pattern evolution sebagai pola dari proses menarik data yang sudah ditemukan berdasarkan penekanan yang diberikan. Knowledge presentation dengan visualisasi data.</p></li>
+<li><p>Proses Modeling
+Memasuki proses penambangan data dengan menerapkan predictive modeling yang terdiri dari dua teknik, yakni classification dan value prediction. Adapula database segmentation, merupakan partisi database menjadi sejumlah bagian atau segmen, hingga cluster atau perekaman yang sama. Digunakan pula link analysis untuk menghubungkan record satu dengan lainnya.</p></li>
+<li><p>Evaluasi Data
+Menggunakan teknik deviation detection, yakni identifikasi outlier dengan mengekspresikan deviasi dari ekspektasi yang ada. Kemudian dilakukan nearest neighbour yang dipakai untuk memprediksi pengelompokan, teknik tertua dalam data mining. Dan terakhir clustering, mengklasifikasikan data berdasarkan kriteria masing-masing.</p></li>
+<li><p>Penyajian Data
+Digunakan model prediktif seperti decision tree, digambarkan layaknya seperti pohon karena setiap node di dalam struktur pohon mewakili sebuah pertanyaan yang digunakan untuk menggolongkan data bisa didapat dari jurnal data mining.</p></li>
+</ol>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -340,6 +389,20 @@ title="Open an issue"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="datamining_2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Fungsi Data Mining</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tugas-1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dissimilarity</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
